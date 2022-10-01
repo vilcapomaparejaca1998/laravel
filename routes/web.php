@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\qrvclientesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MedicoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('qrvclientes',qrvclientesController::class);
+
+Route::resource('medicos',MedicoController::class);
